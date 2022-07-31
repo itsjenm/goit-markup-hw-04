@@ -113,20 +113,20 @@ nav {
 }
 
 
-.contact-icons {
+.icon-container {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     cursor: pointer;
     
 }
 
-
-#email,
-#tel {
-    width: 10px;
-    height: 16px;
+.contact-icon {
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
     fill: #757575;
+
 }
 
 
@@ -156,8 +156,10 @@ nav {
 
 #main-hero {
     padding: 200px 0;
-    background-color: #2F303A;
+    background-image:  linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/background-image.jpg);
+    background-size: cover;
 }
+
 
 .hero-container {
     text-align: center;
@@ -248,9 +250,25 @@ nav {
 
 .benefits,
 .what-we-do,
-.team {
+.team,
+.customers {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+.benefit-image-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
+.image {
+    flex-shrink: 0;
 }
 
 
@@ -325,14 +343,21 @@ p {
     margin-bottom: 30px;
 } 
 
+
 .social-icons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    fill: #AFB1B8;
 }
 
 
+.social-team_link:hover,
+.social-team_link:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+    
+}
 
 
 
@@ -363,18 +388,43 @@ p {
     color: #FFFFFF;
 }
 
+
+.image-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.image-container:hover,
+.image-container:focus {
+    border: 1px solid #2196F3;
+    cursor: pointer;
+}
+
+.customer-link:hover {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+}
+
 footer {
     padding: 60px 0;
     background-color: #2F303A;
+    
 }
 
-   
-footer .WebStudio {
+
+footer .WebStudio, 
+footer .social-title {
     color: #FFFFFF;
     margin-bottom: 10px;
     display: block;
-    
 }
+
+
 
 .footer-contacts {
     color: #757575;
@@ -389,3 +439,5 @@ footer .WebStudio {
 .footer-contacts:focus {
     color: rgba(255, 255, 255, 1);;
 }
+
+
