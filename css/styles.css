@@ -107,6 +107,10 @@ nav {
   margin-right: 50px;
 }
 
+.icon {
+  display: flex;
+}
+
 .icon-container {
   display: flex;
   flex-direction: row-reverse;
@@ -151,7 +155,7 @@ nav {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/background-image.jpg/);
+    url(../images/background-image.jpg);
   background-size: cover;
 }
 
@@ -214,13 +218,24 @@ nav {
 .projects-item {
   margin-top: 30px;
   margin-left: 30px;
-  margin-bottom: 30px;
 }
 
 .project-info-container {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+
+.project-link {
+  display: block;
+  cursor: pointer;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 #main-content {
@@ -250,6 +265,7 @@ nav {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .image {
@@ -322,8 +338,38 @@ p {
 .social-icons {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.social-team_item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-team_link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
   fill: #afb1b8;
+}
+
+.social-team_link-footer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 1);
+  margin-right: 10px;
+}
+
+.social-team_link-footer:hover,
+.social-team_link-footer:focus {
+  background-color: #2196f3;
 }
 
 .social-team_link:hover,
@@ -352,11 +398,17 @@ p {
 .button-filter:focus {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .button-filter-selected {
   background-color: #2196f3;
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 
+  0px 1px 2px rgba(0, 0, 0, 0.08), 
+  0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .image-container {
@@ -380,9 +432,10 @@ p {
   fill: #ffffff;
 }
 
-footer {
+footer  {
   padding: 60px 0;
   background-color: #2f303a;
+  display: flex;
 }
 
 footer .WebStudio,
@@ -392,8 +445,17 @@ footer .social-title {
   display: block;
 }
 
+.social-title {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
 .footer-contacts {
   color: #757575;
+}
+
+.social-links {
+  margin-left: -1044px;
 }
 
 .footer-contact-item:not(:last-child) {
