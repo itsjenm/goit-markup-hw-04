@@ -370,6 +370,7 @@ p {
 .social-team_link-footer:hover,
 .social-team_link-footer:focus {
   background-color: #2196f3;
+  fill: #ffffff;
 }
 
 .social-team_link:hover,
