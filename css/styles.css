@@ -111,20 +111,11 @@ nav {
   display: flex;
 }
 
-.icon-container {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  cursor: pointer;
-  fill: rgba(117, 117, 117, 1);
-
-}
 
 
 .contact-icon {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .icon-container :hover,
@@ -188,6 +179,7 @@ nav {
   font-weight: 700;
   color: #ffffff;
   cursor: pointer;
+  line-height: 30px;
 }
 
 .request-button:hover,
@@ -240,6 +232,7 @@ nav {
 
 .project-link:hover,
 .project-link:focus {
+  outline: none;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -262,7 +255,6 @@ nav {
 .team,
 .customers {
   display: flex;
-  justify-content: space-between;
 }
 
 .benefit-image-container {
@@ -273,6 +265,8 @@ nav {
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
+  border-radius: 4px;
+  margin-right: 30px;
 }
 
 .image {
@@ -331,6 +325,7 @@ p {
   border-bottom-left-radius: 4px;
   box-shadow: 0px 2px rgba(0, 0, 0, 0.2);
   padding-bottom: 30px;
+  margin-right: 30px;
 }
 
 .team-position {
@@ -338,7 +333,11 @@ p {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  fill: currentColor;
 }
 
 .icon-border {
@@ -349,15 +348,22 @@ p {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
+  color: rgba(175, 177, 184, 1);
   border-color: rgba(175, 177, 184, 1);
   cursor: pointer;
+  margin-right: 30px;
+}
+
+.icon-border :not(:last-child) {
+  margin-right: 30px;
 }
 
 .icon-border:hover,
 .icon-border:focus {
-  fill: rgba(33, 150, 243, 1);
+  color: rgba(33, 150, 243, 1);
   border-color: rgba(33, 150, 243, 1);
 }
+
 
 .social-icons {
   display: flex;
@@ -369,6 +375,10 @@ p {
   margin-right: 10px;
 }
 
+.social-team_icon {
+  fill: currentColor;
+}
+
 .social-team_link {
   width: 44px;
   height: 44px;
@@ -376,7 +386,7 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  fill: #afb1b8;
+  color: #afb1b8;
 }
 
 .social-team_link-footer {
@@ -387,20 +397,20 @@ p {
   align-items: center;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   margin-right: 10px;
 }
 
 .social-team_link-footer:hover,
 .social-team_link-footer:focus {
   background-color: #2196f3;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .social-team_link:hover,
 .social-team_link:focus {
   background-color: #2196f3;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .button-filter {
@@ -413,6 +423,7 @@ p {
   border-radius: 4px;
   text-align: center;
   cursor: pointer;
+  line-height: 26px;
 }
 
 .button-filter:not(:last-child) {
@@ -421,6 +432,7 @@ p {
 
 .button-filter:hover,
 .button-filter:focus {
+  outline: none;
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 
