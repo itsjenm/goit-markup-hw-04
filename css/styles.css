@@ -100,14 +100,14 @@ nav {
   display: flex;
   align-items: center;
   color: #757575;
-  /* background-color: lime; */
 }
 
 .nav-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.icon {
+
+.footer-icon {
   display: flex;
 }
 
@@ -116,14 +116,21 @@ nav {
   flex-direction: row-reverse;
   align-items: center;
   cursor: pointer;
+  fill: rgba(117, 117, 117, 1);
+
 }
+
 
 .contact-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: #757575;
 }
+
+.icon-container :hover,
+.icon-container :focus {
+  fill: rgba(33, 150, 243, 1);
+ }
 
 .header-container :hover,
 .header-container :focus {
@@ -148,7 +155,7 @@ nav {
   font-weight: 700;
 }
 
-#main-hero {
+.main-hero {
   padding: 200px 0;
   background-image: linear-gradient(
       to top,
@@ -202,7 +209,7 @@ nav {
   /* background-color: red; */
 }
 
-#work-examples {
+.work-examples {
   padding: 94px 0;
 }
 
@@ -238,11 +245,11 @@ nav {
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-#main-content {
+.section {
   padding: 94px 0 94px 0;
 }
 
-#what-we-do {
+.section-no-top-padding {
   padding-top: 0;
 }
 
@@ -272,16 +279,15 @@ nav {
   flex-shrink: 0;
 }
 
-#main-content .title {
+.section .title {
   font-weight: 700;
   font-size: 14px;
   background-color: #ffffff;
   margin-bottom: 10px;
 }
 
-#main-content .details {
+.section .details {
   width: 270px;
-  margin-right: 30px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -301,7 +307,7 @@ p {
   display: grid;
 }
 
-#main-content .section-title {
+.section .section-title {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -333,6 +339,24 @@ p {
   font-weight: 400;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.icon-border {
+  border: 1px solid black;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border-color: rgba(175, 177, 184, 1);
+  cursor: pointer;
+}
+
+.icon-border:hover,
+.icon-border:focus {
+  fill: rgba(33, 150, 243, 1);
+  border-color: rgba(33, 150, 243, 1);
 }
 
 .social-icons {
@@ -433,14 +457,14 @@ p {
   fill: #ffffff;
 }
 
-footer  {
+.footer  {
   padding: 60px 0;
   background-color: #2f303a;
   display: flex;
 }
 
-footer .WebStudio,
-footer .social-title {
+.footer .WebStudio,
+.footer .social-title {
   color: #ffffff;
   margin-bottom: 10px;
   display: block;
@@ -459,6 +483,10 @@ footer .social-title {
   margin-left: -1044px;
 }
 
+.footer-container {
+  display: flex;
+}
+
 .footer-contact-item:not(:last-child) {
   margin-bottom: 5px;
 }
@@ -466,4 +494,8 @@ footer .social-title {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: rgba(255, 255, 255, 1);
+}
+
+.footer-social-icons {
+  margin-left: 70px;
 }
